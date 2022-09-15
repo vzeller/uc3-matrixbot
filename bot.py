@@ -166,10 +166,6 @@ class Callbacks:
                 await self.client.room_send(room_id=room.room_id,message_type="m.room.message",content={"msgtype": "m.text", "body": "Im a matrix bot. For help contact B4ckBOne. ZZ"},ignore_unverified_devices=True)
             if event.body[1:5] == "root":
                 await self.client.room_send(room_id=room.room_id,message_type="m.room.message",content={"msgtype": "m.text", "body": "root"},ignore_unverified_devices=True)
-            if event.body[1:5] == "root":
-                await self.client.room_send(room_id=room.room_id,message_type="m.room.message",content={"msgtype": "m.text", "body": "root"},ignore_unverified_devices=True)
-            if event.body[1:5] == "root":
-                await self.client.room_send(room_id=room.room_id,message_type="m.room.message",content={"msgtype": "m.text", "body": "root"},ignore_unverified_devices=True)
             global data
             if event.body[1:6] == "heute":
                 await self.client.room_send(room_id=room.room_id,message_type="m.room.message",content={"msgtype": "m.text", "body": str(data)},ignore_unverified_devices=True)
